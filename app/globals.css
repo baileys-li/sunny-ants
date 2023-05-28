@@ -4,7 +4,7 @@
 	--accent: hsl(47deg 97% 51%);
 	--accent-dark: hsl(266deg 80% 18%);
 	--side-offset: 2rem;
-	--secondary: hsl(266, 100%, 50%);
+	--secondary: hsl(266deg 100% 50%);
 
 	@media (--viewport-medium) {
 		--side-offset: calc(50% - 960px / 2);

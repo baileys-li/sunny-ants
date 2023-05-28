@@ -15,7 +15,6 @@
 }
 
 .list {
-	padding: 0;
 	margin: 0;
 	list-style: none;
 	display: grid;
@@ -31,7 +30,6 @@
 	scroll-padding-right: 2rem;
 	justify-content: space-between;
 	scrollbar-width: none;
-
 	padding-block: 64px 48px;
 
 	&::-webkit-scrollbar {
@@ -58,8 +56,7 @@
 	margin-block: 0 1rem;
 	font-weight: 600;
 	font-size: 18px;
-
-	color: #000000;
+	color: #000;
 }
 
 .plus {
@@ -79,15 +76,15 @@
 		content: '';
 		width: 14px;
 		height: 14px;
-
 		background-color: white;
-		mask: url(/stack.svg#plus) no-repeat center;
+		mask: url("/stack.svg#plus") no-repeat center;
 	}
 }
 
 @media (width >= 60rem) {
 	.title {
 		position: relative;
+
 		&::after {
 			content: '';
 			position: absolute;
