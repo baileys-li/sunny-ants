@@ -1,0 +1,6 @@
+.root {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 18px;
+	align-items: start;
+}
