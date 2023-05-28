@@ -5,7 +5,7 @@ import NextLink from 'next/link';
 import css from './Link.module.css';
 
 type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'> & {
-	variant?: 'underline' | 'default';
+	variant?: 'underline' | 'default' | 'tag';
 	href: string;
 };
 

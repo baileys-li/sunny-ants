@@ -11,3 +11,14 @@
 		color: var(--link-active, var(--accent));
 	}
 }
+
+.tag {
+	text-transform: uppercase;
+	color: var(--secondary);
+	outline-color: currentcolor;
+	outline-offset: 0.4em;
+
+	&:is(:hover, :focus-visible) {
+		color: var(--link-active, var(--accent-dark));
+	}
+}

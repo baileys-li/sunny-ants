@@ -54,7 +54,7 @@
 }
 
 
-@media (width < 50rem) {
+@media (width < 54rem) {
 	.list {
 		position: absolute;
 		visibility: hidden;
@@ -92,7 +92,7 @@
 	}
 }
 
-@media (width >= 50rem) {
+@media (width >= 54rem) {
 	.root {
 		display: grid;
 		grid-template-columns: 1fr calc(540 / 16 * 1rem) auto;

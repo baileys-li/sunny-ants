@@ -5,7 +5,7 @@ import { ReactNode } from 'react'
 import {Header} from './components/Header'
 import Footer from './components/Footer/Footer'
 
-const inter = Poppins({ weight: ['400', '600', '800'], subsets: ['latin'] })
+const inter = Poppins({ weight: ['400', '600', '700', '800'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Nice',
