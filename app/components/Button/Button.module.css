@@ -1,0 +1,46 @@
+.default,
+.border {
+	font: inherit;
+	font-weight: 600;
+	padding-inline: calc(9 / 16 * 2em);
+	padding-block: calc(9 / 16 * 1em);
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 8px;
+	border: 1px solid transparent;
+	outline-offset: 0.2em;
+	text-align: center;
+
+	&:disabled {
+		pointer-events: none;
+		opacity: 80%;
+	}
+}
+
+.default {
+	background-color: var(--accent);
+	color: var(--accent-dark);
+
+	transition-property: background-color;
+	transition-duration: 0.2s;
+	outline-color: var(--accent);
+
+	&:is(:hover, :focus-visible) {
+		background-color: hsl(47deg 100% 36%);
+	}
+}
+
+.border {
+	background-color: transparent;
+	color: hsl(0, 0%, 100%);
+	border-color: currentColor;
+
+	transition-property: background-color, color;
+	transition-duration: 0.2s;
+
+	&:is(:hover, :focus-visible) {
+		background-color: hsl(0, 0%, 100%);
+		color: var(--accent-dark);
+		border-color: hsl(0, 0%, 100%);
+	}
+}
