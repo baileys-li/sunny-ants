@@ -4,18 +4,16 @@
 	color: black;
 	position: sticky;
 	top: 0;
-
 	padding-block: 40px 35px;
 	padding-inline: 18px;
-
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
-
 	isolation: isolate;
 	z-index: 10;
+
 	&::before {
 		z-index: -1;
 		content: "";
@@ -69,15 +67,20 @@
 		gap: 0;
 		transition: opacity 0.2s ease-in-out, translate 0.2s ease-in-out;
 		padding-bottom: 20px;
+		opacity: 0;
+
 		& a {
 			display: block;
 			padding: 10px 18px;
 		}
 	}
+
 	.list.opened {
 		visibility: visible;
 		translate: 0 0;
+		opacity: 1;
 	}
+
 	.toggle {
 		all:unset;
 		cursor: pointer;

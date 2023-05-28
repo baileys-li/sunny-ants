@@ -15,7 +15,6 @@
 	gap: 0.5em;
 	align-items: center;
 	justify-content: center;
-
 	transition-property: background-color, color;
 	transition-duration: 0.2s;
 
@@ -51,6 +50,7 @@
 .white {
 	background-color: white;
 	color: var(--accent-dark);
+
 	&:is(:hover, :focus-visible) {
 		background-color: var(--accent)
 	}

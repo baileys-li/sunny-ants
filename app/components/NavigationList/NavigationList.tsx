@@ -11,7 +11,7 @@ const NavLink = ({ href, text }: NavigationLink) => (
 	</li>
 );
 
-type Props = Pick<HTMLAttributes<HTMLUListElement>, 'id' | 'className'>
+type Props = Pick<HTMLAttributes<HTMLUListElement>, 'id' | 'className' | 'onTransitionEnd'>
 
 export default function NavigationList({className, ...props}: Props) {
 	className = classNames(className, css.root)
