@@ -21,6 +21,10 @@
 		z-index: 2;
 		rotate: 313deg;
 		background-size: contain;
+
+		transition: transform 500ms ease-in-out;
+		transform: translate(calc(var(--mouse-y) * 20px), calc(var(--mouse-x) * -20px ));
+
 	}
 }
 
@@ -77,6 +81,9 @@
 			z-index: -1;
 			top: 30px;
 			right: calc(var(--side-offset) - 90px);
+
+			transition: transform 500ms ease-in-out;
+			transform: translate(calc(var(--mouse-y) * -10px), calc(var(--mouse-x) * 30px ));
 		}
 	}
 
