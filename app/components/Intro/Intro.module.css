@@ -6,10 +6,12 @@
 
 	margin-block: 0 148px;
 	display: grid;
-	background-image: url(./bg-mob.svg);
-	background-repeat: no-repeat;
-	background-position: left 47% bottom -160px;
+	background-image: url(./bg.svg), url(./noise.png);
+	background-size: 717px auto, auto;
+	background-position: left 47% bottom -160px, 0 0;
+	background-repeat: no-repeat, repeat;
 	gap: 1rem;
+	width: 100%;
 }
 
 .title {
@@ -64,9 +66,11 @@
 		align-items: start;
 		gap:  calc(11 / 16 * 1rem);
 
-		background-size: 840px auto;
+		background-size: 840px auto, auto;
 
-		background-position: right calc(var(--side-offset) + 160px) bottom -170px
+		background-position: right calc(var(--side-offset) + 160px) bottom -170px, 0 0;
+
+		margin-bottom: 44px;
 	}
 
 	.title {
@@ -88,7 +92,7 @@
 		width: 290px;
 		height: auto;
 		align-self: end;
-		margin-bottom: -120px;
+		margin-bottom: calc(-60px - 44px);
 		margin-right: 54px;
 	}
 }

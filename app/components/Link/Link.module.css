@@ -1,0 +1,13 @@
+.default {
+	color: currentcolor;
+	text-decoration: none;
+	transition: color 0.2s;
+	outline-color: currentcolor;
+	outline-offset: 0.4em;
+	outline-width: 1px;
+	border-radius: 0.5em;
+
+	&:is(:hover, :focus-visible) {
+		color: var(--link-active, var(--accent));
+	}
+}

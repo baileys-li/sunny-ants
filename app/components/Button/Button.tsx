@@ -1,8 +1,7 @@
-import Link from 'next/link';
 import classNames from 'classnames';
 import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
-import css from './Button.module.css'
-
+import css from './Button.module.css';
+import Link from '../Link/Link';
 
 type CommonProps = Pick<ButtonHTMLAttributes<HTMLButtonElement>, 'id' | 'className' | 'children'> & {
 	variant?: 'default' | 'border' | 'white';
@@ -16,26 +15,10 @@ type AnchorProps = Pick<AnchorHTMLAttributes<HTMLAnchorElement>, 'onClick'> & {
 
 type Props = CommonProps & (ButtonProps | AnchorProps);
 
-export default function Button({className, variant = 'default', ...props}: Props) {
-	const isLink = 'href' in props;
-
+export default function Button({ className, variant = 'default', ...props }: Props) {
 	className = classNames(css[variant], className);
-
-
-	if (isLink) {
-		const { href, ...rest } = props;
-		const isAnchor = href.startsWith('#');
-		const isExternal = href.startsWith('http');
-		const externalProps = isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {};
-
-		if (isAnchor || isExternal) {
-			return <a className={className} href={href} {...rest} {...externalProps} />;
-		}
-
-		return <Link  className={className} href={href} {...rest} />
-	}
+	if ('href' in props) return <Link className={className} {...props} />;
 
 	const { type = 'button', ...rest } = props;
-
-	return <button  className={className} type={type} {...rest} />;
+	return <button className={className} type={type} {...rest} />;
 }

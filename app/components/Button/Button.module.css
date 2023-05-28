@@ -1,5 +1,6 @@
 .default,
-.border {
+.border,
+.white {
 	font: inherit;
 	font-weight: 600;
 	padding-inline: calc(9 / 16 * 2em);
@@ -10,19 +11,23 @@
 	border: 1px solid transparent;
 	outline-offset: 0.2em;
 	text-align: center;
+	display: flex;
+	gap: 0.5em;
+	align-items: center;
+	justify-content: center;
+
+	transition-property: background-color, color;
+	transition-duration: 0.2s;
 
 	&:disabled {
 		pointer-events: none;
-		opacity: 80%;
+		opacity: 0.8;
 	}
 }
 
 .default {
 	background-color: var(--accent);
 	color: var(--accent-dark);
-
-	transition-property: background-color;
-	transition-duration: 0.2s;
 	outline-color: var(--accent);
 
 	&:is(:hover, :focus-visible) {
@@ -32,15 +37,21 @@
 
 .border {
 	background-color: transparent;
-	color: hsl(0, 0%, 100%);
-	border-color: currentColor;
+	color: hsl(0deg 0% 100%);
+	border-color: currentcolor;
 
-	transition-property: background-color, color;
-	transition-duration: 0.2s;
 
 	&:is(:hover, :focus-visible) {
-		background-color: hsl(0, 0%, 100%);
+		background-color: hsl(0deg 0% 100%);
 		color: var(--accent-dark);
-		border-color: hsl(0, 0%, 100%);
+		border-color: hsl(0deg 0% 100%);
+	}
+}
+
+.white {
+	background-color: white;
+	color: var(--accent-dark);
+	&:is(:hover, :focus-visible) {
+		background-color: var(--accent)
 	}
 }
