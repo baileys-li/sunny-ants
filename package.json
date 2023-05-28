@@ -22,6 +22,7 @@
 		"typescript": "5.0.4"
 	},
 	"devDependencies": {
+		"classnames": "^2.3.2",
 		"postcss-calc": "^9.0.1",
 		"postcss-csso": "^6.0.1",
 		"postcss-preset-env": "^8.4.1",

@@ -30,6 +30,9 @@ dependencies:
     version: 5.0.4
 
 devDependencies:
+  classnames:
+    specifier: ^2.3.2
+    version: 2.3.2
   postcss-calc:
     specifier: ^9.0.1
     version: 9.0.1(postcss@8.4.23)
@@ -955,6 +958,10 @@ packages:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
     dev: false
+
+  /classnames@2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
+    dev: true
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
