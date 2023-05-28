@@ -6,7 +6,9 @@ import Button from '../Button/Button';
 export default function Intro() {
 	return (
 		<section className={css.root}>
-			<h1 className={css.title}>Um slogan <br /> chamativo aqui.</h1>
+			<h1 className={css.title}>
+				Um slogan <br /> chamativo aqui.
+			</h1>
 			<p className={css.text}>
 				Um texto sobre o seu produto ou serviço. Explique <b>porque ele é valioso</b> e direcione o usuário ao próximo objetivo.
 			</p>
@@ -16,8 +18,9 @@ export default function Intro() {
 					<Button className={css.cta}>Eu quero!</Button>
 				</li>
 				<li>
-
-					<Button className={css.secondary} variant='border'>Conhecer mais</Button>
+					<Button className={css.secondary} variant="border">
+						Conhecer mais
+					</Button>
 				</li>
 			</menu>
 

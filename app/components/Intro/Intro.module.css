@@ -3,10 +3,9 @@
 	background-color: var(--accent-dark);
 	color: hsl(0deg 0% 100%);
 	padding-block: calc(60 / 16 * 1rem) 0;
-
 	margin-block: 0 148px;
 	display: grid;
-	background-image: url(./bg.svg), url(./noise.png);
+	background-image: url("./bg.svg"), url("./noise.png");
 	background-size: 717px auto, auto;
 	background-position: left 47% bottom -160px, 0 0;
 	background-repeat: no-repeat, repeat;
@@ -17,6 +16,7 @@
 .title {
 	font-weight: 800;
 	font-size: calc(48 / 16 * 1rem);
+	font-size: clamp(calc(48 / 16 * 1rem), calc(48 / 375 * 100vw), calc(64 / 16 * 1rem));
 	line-height: 1.375;
 	margin-block: 0;
 	max-width: 18ch;
@@ -63,18 +63,10 @@
 		grid-template-columns: 1fr auto;
 		padding-block: calc(60 / 16 * 1rem);
 		align-items: start;
-		align-items: start;
-		gap:  calc(11 / 16 * 1rem);
-
+		gap: calc(11 / 16 * 1rem);
 		background-size: 840px auto, auto;
-
 		background-position: right calc(var(--side-offset) + 160px) bottom -170px, 0 0;
-
 		margin-bottom: 44px;
-	}
-
-	.title {
-		font-size: calc(64 / 16 * 1rem);
 	}
 
 	.text {
@@ -88,7 +80,6 @@
 	.pic {
 		grid-column: -2 / -1;
 		grid-row: 1 / 4;
-		margin-bottom: 0;
 		width: 290px;
 		height: auto;
 		align-self: end;
