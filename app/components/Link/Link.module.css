@@ -1,24 +1,42 @@
-.default {
-	color: currentcolor;
-	text-decoration: none;
-	transition: color 0.2s;
+.tag, .default, .underline   {
 	outline-color: currentcolor;
 	outline-offset: 0.4em;
 	outline-width: 1px;
 	border-radius: 0.5em;
+	color: inherit;
+}
+
+.default {
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.2s;
 
 	&:is(:hover, :focus-visible) {
 		color: var(--link-active, var(--accent));
 	}
 }
 
+
+
 .tag {
 	text-transform: uppercase;
 	color: var(--secondary);
 	outline-color: currentcolor;
 	outline-offset: 0.4em;
+	text-decoration: none;
 
 	&:is(:hover, :focus-visible) {
 		color: var(--link-active, var(--accent-dark));
+	}
+}
+
+
+.underline {
+	color: inherit;
+	font-weight: 600;
+	text-underline-offset: 0.1em;
+
+	&:is(:hover, :focus-visible) {
+		color: var(--link-active, var(--secondary));
 	}
 }

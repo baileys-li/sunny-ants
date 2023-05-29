@@ -1,0 +1,102 @@
+.root {
+	padding-block: 35px 75px;
+	padding-inline: var(--side-offset);
+	background-color: hsl(270, 29%, 97%);
+}
+
+.title {
+	position: relative;
+	text-align: center;
+	margin-block: 0;
+	padding-block: calc(154px + 16px) 37px;
+
+	background-image: url(/bubble.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto 154px;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 22px;
+		height: 3px;
+		width: 97px;
+		display: block;
+		background-color: var(--accent);
+		left: calc(50% - 97px / 2);
+	}
+}
+
+.text {
+	margin-block: 0 1em;
+}
+
+.whatsapp {
+	font: inherit;
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	color: var(--accent-dark);
+	margin-block: 4px 54px;
+	&::before {
+		content: '';
+		background-image: url(/whatsapp.png);
+		width: 39px;
+		height: 39px;
+	}
+}
+
+
+.form {
+	display: grid;
+	gap: 16px;
+	color: var(--secondary)
+}
+
+.label {
+	display: grid;
+	gap: 5px;
+}
+
+.input {
+	font: inherit;
+	color: #656565;
+	padding: 0.5em 1em;
+	width: 100%;
+	border: 1px solid hsl(267, 33%, 69%);
+	border-radius: 8px;
+	outline: none;
+
+	&:focus {
+		border-color: var(--secondary);
+	}
+}
+
+.submit {
+	margin-top: calc(34px - 16px);
+	width: 186px;
+	justify-self: end;
+}
+
+
+@media (width >= 40rem) {
+	.root {
+		padding-block: 35px 2rem;
+		display: grid;
+		grid-template-columns: max(calc(365% / 9.6), 270px) calc(400% / 9.6);
+		justify-content: space-between;
+	}
+
+	.title {
+		grid-column: 1 / -1;
+		margin-bottom: calc(75px - 37px);
+	}
+
+	.whatsapp {
+		margin-block: 41px 0;
+	}
+
+	.wrapper {
+		margin-top: 1rem;
+	}
+}

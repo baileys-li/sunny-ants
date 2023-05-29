@@ -36,3 +36,8 @@ body {
 	font-size: calc(24 / 16);
 	color: var(--accent-dark);
 }
+
+.mark {
+	font-weight: 700;
+	color: var(--secondary);
+}

@@ -39,10 +39,6 @@
 .text {
 	margin-block: 0 calc(10 / 16 * 1rem);
 	max-width: 44ch;
-	& b {
-		font-weight: 700;
-		color: var(--secondary);
-	}
 }
 .cta {
 	width: 186px;

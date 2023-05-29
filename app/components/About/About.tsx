@@ -36,7 +36,7 @@ export default function About() {
 			<h2 className={css.title}>Simples, rápido e do seu jeito.</h2>
 			<p className={css.text}>
 				Mostre os valores da sua marca e como ela pode fazer parte da vida do usuário que está lendo. Gerar identificação é a chave para{' '}
-				<b>conquistar seu cliente.</b>
+				<b className='mark'>conquistar seu cliente.</b>
 			</p>
 
 			<Button className={css.cta}>Eu quero!</Button>
