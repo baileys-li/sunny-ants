@@ -1,5 +1,6 @@
 .root {
 	padding-block: 28px 0;
+	scroll-margin-block-start: 3.4rem;
 }
 
 .title {

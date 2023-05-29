@@ -1,7 +1,7 @@
 .root {
 	padding-block: 35px 75px;
 	padding-inline: var(--side-offset);
-	background-color: hsl(270, 29%, 97%);
+	background-color: hsl(270deg 29% 97%);
 }
 
 .title {
@@ -9,8 +9,7 @@
 	text-align: center;
 	margin-block: 0;
 	padding-block: calc(154px + 16px) 37px;
-
-	background-image: url(/bubble.png);
+	background-image: url("/bubble.png");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: auto 154px;
@@ -38,9 +37,10 @@
 	align-items: center;
 	color: var(--accent-dark);
 	margin-block: 4px 54px;
+
 	&::before {
 		content: '';
-		background-image: url(/whatsapp.png);
+		background-image: url("/whatsapp.png");
 		width: 39px;
 		height: 39px;
 	}
@@ -63,7 +63,7 @@
 	color: #656565;
 	padding: 0.5em 1em;
 	width: 100%;
-	border: 1px solid hsl(267, 33%, 69%);
+	border: 1px solid hsl(267deg 33% 69%);
 	border-radius: 8px;
 	outline: none;
 

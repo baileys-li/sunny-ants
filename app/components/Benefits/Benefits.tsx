@@ -5,7 +5,7 @@ import cn from 'classnames';
 
 export default function Benefits() {
 	return (
-		<section className={css.root}>
+		<section className={css.root} id="benefits">
 			<h2 className={cn('title', css.title)}>Um subtítulo para quem rolou até aqui!</h2>
 			<p className={css.lead}>Aproveite esta seção para destacar os benefícios do seu produto ou serviço. Palavras-chave ajudam no SEO.</p>
 

@@ -24,6 +24,31 @@ html {
 	line-height: calc(24 / 16);
 	letter-spacing: -0.02em;
 	color: hsl(0deg 0% 21%);
+	scroll-behavior: smooth;
+	scrollbar-color: var(--accent-dark) hsl(0deg 0% 100%);
+}
+
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: hsl(0deg 0% 100%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--accent);
+	border: 3px solid hsl(0deg 0% 100%);
+	background-clip: padding-box;
+	border-radius: 10px;
+}
+
+::selection {
+	background-color: var(--accent-dark);
+	color: hsl(0deg 0% 100%);
 }
 
 body {

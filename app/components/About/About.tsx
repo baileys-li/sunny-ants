@@ -28,7 +28,7 @@ export default function About() {
 		return () => window.removeEventListener('mousemove', throttledMouseWatcher);
 	});
 	return (
-		<section className={css.root}>
+		<section className={css.root} id="about">
 			<Link variant="tag" className={css.tag} href="#contecomagente">
 				#contecomagente
 			</Link>
